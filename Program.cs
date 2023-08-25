@@ -1,10 +1,12 @@
-﻿namespace ConsoleChessGame
+﻿using ConsoleChessGame.Board;
+
+namespace ConsoleChessGame
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Position
         }
     }
 }
