@@ -1,4 +1,4 @@
-﻿namespace ConsoleChessGame.Entities.Board
+﻿namespace ConsoleChessGame.Entities.board
 {
     internal class Board
     {
@@ -15,7 +15,15 @@
 
         public Piece Piece (int line, int column)
         {
+            // Return the correspondent position on the board
             return Pieces[line, column];
+        }
+
+        public void AddPiece(Piece p, Position pos)
+        {
+            // Add a piece of chess at the correspondent position
+            Pieces[pos.Line, pos.Column] = p;
+            p.Position = pos;
         }
     }
 }

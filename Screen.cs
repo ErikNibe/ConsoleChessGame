@@ -1,4 +1,4 @@
-﻿using ConsoleChessGame.Entities.Board;
+﻿using ConsoleChessGame.Entities.board;
 
 namespace ConsoleChessGame
 {
@@ -16,7 +16,7 @@ namespace ConsoleChessGame
                     }
                     else
                     {
-                        Console.WriteLine(board.Piece(i, j) + " ");
+                        Console.Write(board.Piece(i, j) + " ");
                     }
                 }
 

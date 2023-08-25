@@ -1,6 +1,6 @@
-﻿using ConsoleChessGame.Entities.Board.Enums;
+﻿using ConsoleChessGame.Entities.board.Enums;
 
-namespace ConsoleChessGame.Entities.Board
+namespace ConsoleChessGame.Entities.board
 {
     internal class Piece
     {
@@ -9,9 +9,9 @@ namespace ConsoleChessGame.Entities.Board
         public int NumberOfMoves { get; protected set; }
         public Board Board { get; protected set; }
 
-        public Piece(Position position, Color color, Board board)
+        public Piece(Board board, Color color)
         {
-            Position = position;
+            Position = null;
             Color = color;
             NumberOfMoves = 0;
             Board = board;

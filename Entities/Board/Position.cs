@@ -1,4 +1,4 @@
-﻿namespace ConsoleChessGame.Entities.Board
+﻿namespace ConsoleChessGame.Entities.board
 {
     internal class Position
     {

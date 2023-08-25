@@ -1,4 +1,6 @@
-﻿using ConsoleChessGame.Entities.Board;
+﻿using ConsoleChessGame.Entities.board;
+using ConsoleChessGame.Entities.board.Enums;
+using ConsoleChessGame.Entities.Chess;
 
 namespace ConsoleChessGame
 {
@@ -8,8 +10,11 @@ namespace ConsoleChessGame
         {
             Board board = new Board(8, 8);
 
-            Screen.PrintBoard(board);
+            board.AddPiece(new Tower(board, Color.Black), new Position(0, 0));
+            board.AddPiece(new Tower(board, Color.Black), new Position(1, 3));
+            board.AddPiece(new Tower(board, Color.Black), new Position(2, 4));
 
+            Screen.PrintBoard(board);
         }
     }
 }
