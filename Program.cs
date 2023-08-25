@@ -1,4 +1,4 @@
-﻿using ConsoleChessGame.Board;
+﻿using ConsoleChessGame.Entities.Board;
 
 namespace ConsoleChessGame
 {

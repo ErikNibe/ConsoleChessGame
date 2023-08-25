@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleChessGame.Board
+namespace ConsoleChessGame.Entities.Board
 {
     internal class Position
     {
-        public int Line {  get; set; }
+        public int Line { get; set; }
         public int Column { get; set; }
 
         public Position(int line, int column)
