@@ -6,7 +6,10 @@ namespace ConsoleChessGame
     {
         static void Main(string[] args)
         {
-            Position
+            Board board = new Board(8, 8);
+
+            Screen.PrintBoard(board);
+
         }
     }
 }

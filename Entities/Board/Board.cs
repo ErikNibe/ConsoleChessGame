@@ -1,22 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleChessGame.Entities.Board
+﻿namespace ConsoleChessGame.Entities.Board
 {
     internal class Board
     {
-        public int Line { get; set; }
+        public int Lines { get; set; }
         public int Columns { get; set; }
         private Piece[,] Pieces;
 
-        public Board(int line, int column) 
+        public Board(int lines, int columns) 
         { 
-            Line = line;
-            Columns = column;
-            Pieces = new Piece[Line, Columns];
+            Lines = lines;
+            Columns = columns;
+            Pieces = new Piece[Lines, Columns];
+        }
+
+        public Piece Piece (int line, int column)
+        {
+            return Pieces[line, column];
         }
     }
 }
